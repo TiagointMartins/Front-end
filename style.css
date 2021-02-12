@@ -1,76 +1,80 @@
 /*Estilos da Pagina Index*/
-.titulo{
-	color: white;
-	font-style: 25px;
-	text-align: center;
+
+.titulo {
+    color: white;
+    font-style: 25px;
+    text-align: center;
 }
 
-.sub-titulo{
-	color: #4B0082;
-	text-align: center;
-}
-.endereco{
-	font-style: 25px;
-	color: #4B0082;
-	text-align: center;
+.sub-titulo {
+    color: #4B0082;
+    text-align: center;
 }
 
-.rodape{
-	width: 70px;
-height: 70px;
-border-radius: 100%;
-margin: auto;
-position: relative;
-border-bottom: 3px groove #4B0082);
-border-right: 3px groove #4B0082;
-border-left: 3px groove #4B0082;
-border-top: 3px groove #4B0082;
-padding: 1px;
+.endereco {
+    font-style: 25px;
+    color: #4B0082;
+    text-align: center;
 }
 
-
-.imagem{
-	border-radius: 150%;
-}	
-
-
-body{
-	background-color: black;
+.rodape {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: auto;
+    position: relative;
+    border-bottom: 3px groove #4B0082);
+    border-right: 3px groove #4B0082;
+    border-left: 3px groove #4B0082;
+    border-top: 3px groove #4B0082;
+    padding: 1px;
 }
 
-.center{
-	text-align: center;
-	color: #4B0082;
+.imagem {
+    border-radius: 150%;
 }
 
-.container{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+body {
+    background-color: black;
 }
 
-#menu li{
-	display: inline;
-	padding: 15px;
-	font-size: 25px;
+.center {
+    text-align: center;
+    color: #4B0082;
+}
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+    font-size: 25px;
 }
 
 #menu li a {
-	text-decoration: none;
-	color:  #4B0082;
-
+    text-decoration: none;
+    color: #4B0082;
 }
 
-#menu li a:hover{
-	color: white;
+#menu li a:hover {
+    color: white;
+}
+
+#menu li img {
+    display: inline;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center
 }
 
 
-p{
-	font-size: 18px;
-	color: white;
-	font-family:"Times New Roman", Times, serif;
-	text-align: center}
 /*Estilos da Pagina Contato  #4B0082 */
