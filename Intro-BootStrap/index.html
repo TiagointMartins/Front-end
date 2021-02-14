@@ -8,7 +8,7 @@
     <title></title>
 
     <!--Link do CSS-->
-    <link href="ativos/style.css" rel="stylesheet">
+    <link href="ativos/CSS/style.css" rel="stylesheet">
 
     <!--Link do CSS BootStramp-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -18,76 +18,174 @@
 </head>
 
 <body>
-    <!--Link do Menu BootStrap-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!--Inicio Menu-->
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Ação</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid fundoMenu ">
+            <img class="rodape " src="ativos/imagens/logo.jpg " alt=" ">
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent menu ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="active corBotton " aria-current="page " href="# ">Home</a>
+                    </li>
+                    <li class="nav-item " corBotton>
+                        <a class="corBotton " href="">História</a>
+                    </li>
+
+                    <li class="nav-item " corBotton>
+                        <a class="corBotton " href="# ">Curiosidades</a>
+                    </li>
+
+                    <!--Inicio DropDow-->
+                    <div class="dropdown">
+                        <a class=" dropdown-toggle corBotton" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Contato
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/tiag0martins ">LinkedIn</a>
+                            <a class="dropdown-item" href="padding-top">Github</a>
+                            <a class="dropdown-item" href="https://www.facebook.com/Martins0Tiago/">Facebook</a>
+                        </div>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Desativado</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+                    <!--Fim DropDow-->
+
+                </ul>
+                <form class="d-flex ">
+                    <input class="form-control me-2 justificaBotton " type="search " placeholder="Search " aria-label="Search ">
+                    <button class="justificaBotton " type="submit ">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
+    <hr>
+
+    <!--Fim Menu-->
+
+    <!--Inicio Carrossel-->
+    <div id="carouselExampleFade " class="carousel slide carousel-fade " data-ride="carousel ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img class="d-block w-100 carrossel" src="ativos/imagens/img4.jpg" alt="Primeiro Slide ">
+            </div>
+
+            <div class="carousel-item ">
+                <img class="d-block w-100 carrossel " src="ativos/imagens/img2.png " alt="Terceiro Slide ">
+            </div>
+        </div>
+        <a class="carousel-control-prev " href="#carouselExampleFade " role="button " data-slide="prev ">
+            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+            <span class="sr-only ">Anterior</span>
+        </a>
+        <a class="carousel-control-next " href="#carouselExampleFade " role="button " data-slide="next ">
+            <span class="carousel-control-next-icon " aria-hidden="true "></span>
+            <span class="sr-only ">Próximo</span>
+        </a>
+    </div>
+    <!--Fim Carrossel-->
+
+    <!--Inicio divs conteúdo-->
+    <hr>
+    <div>
+        <div>
+            <br>
+            <h1>
+                História do Super Choque
+            </h1>
+            <P> Virgil Hawkins era um garoto simples, gostava de jogar video-games e adorava ler HQ´s como a maioria dos garotos de sua idade ele também era muito tímido , mas por conta disso sofria constantemente ridicularizações de um garoto chamado Francis
+                Stone. Um certo dia, após ter sido violentado pelo valentão, um amigo próximo de Virgil chamado Larry decide ajuda-lo a se vingar e o convida para Ilha Paris. Ao chegar no local o menino se depara com uma cena assustadora, ele vê Francis
+                acorrentado enquanto Larry passava uma pistola para a mão de Virgil. </p>
+            <p>Assustado com a cena, ele joga a pistola em direção da água. Mas enquanto isso acontecia, no mesmo local acontecia uma guerra de gangues. Quando a polícia chega ao local, eles interviram de forma incisiva jogando gás de pimenta, mas esse gás
+                acaba se misturando com alguns produtos químicos misteriosos que causou a morte de várias pessoas que estavam presente na ilha. Mas aquelas que sobreviveram, adquiriram mutações que desfiguraram suas caras, mas por alguma sorte Virgil
+                não sofreu nenhuma e adquiriu poderes eletromagnéticos. Assim ao escolher usar esse dom para o combate ao crime, surge um dos heróis mais conhecidos de todos os tempos, <strong>o Super-Choque.</strong></p>
+
+            <h2 class="center">Seus Poderes</h2>
+
+            <p>Se você acha que os poderes de Virgil se limitam a jogar cargas de energia em seus inimigos você está muito enganado, seus poderes são incríveis !!! Uma de suas habilidades é a absorção de energia e conseguir manipula-la, além de suas rajadas
+                elétricas ele consegue criar um escudo quase impenetrável. Uma de suas características que poucos sabem é a capacidade de criar um bloqueamento magnético em volta de seu cérebro impedindo que seus inimigos consigam controlar sua mente
+                e lerem ela. </p>
+            <p>Ele tem uma espécie de fator de cura também, podendo se recuperar de ferimentos absorvendo energia elétrica, há uma habilidade que pode ser considerada muito detetivesca que é a possibilidade de captar a frequência de rádios e interceptar
+                chamadas telefônicas, sendo assim muito útil contra os bandidos. Virgil é considerado um gênio, muito por conta de ser um ótimo estrategista e ter um intelecto elevado.</p>
+
+            <h1>Curiosidadess</h1>
+            <br>
+
+            <!--Inicio BootSTrap Cards-->
+
+            <div style=" display: inline-block; margin-left: 50px;">
+                <div class="card " style="width: 25rem; border: groove 5px rgb(219, 172, 18); ">
+                    <img class="card-img-top cards " src="ativos/imagens/liga.jpg " alt="Imagem de capa do card ">
+                    <div class="card-body ">
+                        <h5 class="center ">UNIVERSO DC</h5>
+                        <br>
+                        <p class="card-text ">Por mais que o herói tenha episódios inesquecíveis com a participação do Batman e da Liga da Justiça, Virgil veio de uma editora diferente como já dito, que acabou ganhando um universo a parte dentro da DC Comics, conhecido como
+                            Dakotaverso.
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: inline-block; padding: 5px; ">
+                <div class="card " style="width: 25rem; border: groove 5px rgb(219, 172, 18); ">
+                    <img class="card-img-top cards " src="ativos/imagens/card2.jpg " alt="Imagem de capa do card ">
+                    <div class="card-body ">
+                        <h5 class="center ">LIGA DA JUSTIÇA DO FUTURO </h5>
+                        <br>
+                        <p class="card-text ">No 12° e 13° episódio do desenho da Liga da Justiça: Sem Limites, Batman, Mulher- Maravilha e Lanterna Verde estavam atrás de um criminoso até serem teleportados para Gotham... só que no futuro !!!<br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="display: inline-block; padding: 5px; ">
+                <div class="card " style="width: 25rem; border: groove 5px rgb(219, 172, 18); ">
+                    <img class="card-img-top cards " src="ativos/imagens/card3.jpg " alt="Imagem de capa do card ">
+                    <div class="card-body ">
+                        <h5 class="center ">PARTICIPAÇÕES ESPECIAIS</h5>
+                        <br>
+                        <p class="card-text "> Uma das melhores características da série é as participações especias que ocorriam de vez em quando, mas além de outros heróis aparecerem nos episódios quem também da as caras em alguns episódios são as celebridades como os jogadores
+                            de Shaquille O’Neal e Lil’ Romeo.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Fim BootSTrap Cards-->
+
+
+        </div>
+        <!--Fim divs conteúdo-->
 
 
 
+        <br><br>
+    </div>
+    <!--Inicio rodapé-->
+    <div class="center ">
+        <a href="https://www.linkedin.com/in/tiag0martins " target="blank ">
+            <img class="rodape " src="ativos/imagens/linkedin.png ">
+        </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <a href="https://github.com/TiagointMartins?tab=repositories " target="blank ">
+            <img class="rodape " src="ativos/imagens/git.png ">
+        </a>
+    </div>
+    <!--Fim rodapé-->
 
     <!--Link do JS BootStramp-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
     <!--Link do JS local-->
-    <script src="ativos/style.css"></script>
+    <script src="ativos/style.css "></script>
 </body>
 
 </html>
