@@ -1,14 +1,11 @@
     .corBotton {
-        color: #170b8a;
+        color: #fdfdfd;
         font-size: 20px;
-        padding: 10px;
     }
     
     .justificaBotton {
         align-items: center;
         justify-content: center;
-        color: #4B0082;
-        color: rgb(92, 76, 179);
         background-color: #fafafa;
     }
     
@@ -17,8 +14,8 @@
         color: rgb(214, 201, 10);
     }
     
-    .fundoMenu {
-        background-color: white;
+    .menu {
+        background-color: #140a5d;
     }
     
     .rodape {
@@ -35,17 +32,12 @@
         background-color: #f1ee0f;
     }
     
-    .carrossel {
-        max-height: 300px;
-        width: auto;
-        height: auto;
-        border-radius: 10%;
-        position: sticky;
-        border-bottom: 5px solid rgb(214, 201, 10);
-        border-right: 5px solid rgb(75, 87, 100);
-        border-left: 5px solid rgb(75, 87, 100);
-        border-top: 5px solid rgb(214, 201, 10);
-        padding: 1px;
+    .imagem1 {
+        height: 600px;
+        width: 1000px;
+        border-right: 3px solid rgb(75, 87, 100);
+        border-left: 3px solid rgb(75, 87, 100);
+        border-top: 3px solid rgb(214, 201, 10);
     }
     
     h1 {
@@ -58,10 +50,14 @@
     
     p {
         font-size: 20px;
-        color: black;
+        color: white;
         font-family: monospace;
         text-align: center;
         padding: 10px;
+    }
+    
+    .textCards {
+        text-align: center;
     }
     
     .alinharDiv {
@@ -73,5 +69,14 @@
         height: 150px;
         border: groove 5px rgb(219, 172, 18);
         align-items: center;
+    }
+    
+    .card-config {
+        width: 20rem;
+        border: groove 5px rgb(219, 172, 18);
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        margin-left: 10px;
     }
     /*Estilos da Pagina Contato  #4B0082 */
