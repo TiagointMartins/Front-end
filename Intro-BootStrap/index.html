@@ -21,7 +21,7 @@
     <!--Inicio Menu-->
 
     <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid menu">
+        <div class="container-fluid fixed-top">
             <img class="rodape" src="ativos/imagens/logo.jpg" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,20 +33,22 @@
                         <a class="nav-link active corBotton" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corBotton" href="#historia">História</a>
+                        <a class="nav-link corBotton" href="#super">História</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corBotton" href="#curiosidade">Curiosidades</a>
+                        <a class="nav-link corBotton" href="#curiosidades">Curiosidades</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link corBotton" data-bs-toggle="modal" data-bs-target="contatoModal" href="#">Contato</a>
+                        <a class="nav-link corBotton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#">Contato</a>
+
+
                     </li>
 
                 </ul>
                 <form class="d-flex">
-                    <input style=" background-color: rgb(214, 201, 10); " class="form-control me-2 " type="search " placeholder="Search " aria-label="Search ">
-                    <button class="btn btn-outline-success " type="submit ">Pesquisar</button>
+                    <input style=" background-color: white; " class="form-control me-2 btn-outline-warning" type="search " placeholder="Search " aria-label="Search ">
+                    <button style="background-color: white;" class="btn btn-outline-warning text-dark" type="submit ">Pesquisar</button>
                 </form>
             </div>
         </div>
@@ -55,7 +57,7 @@
     <!--Fim Menu-->
 
     <!--Inicio Carrossel-->
-    <div id="carouselExampleControls " class="carousel slide " data-bs-ride="carousel ">
+    <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel ">
         <div class="carousel-inner ">
             <div class="carousel-item active ">
                 <img src="ativos/imagens/img1.jpg " class="d-block imagem1 " alt="... ">
@@ -68,7 +70,7 @@
             </div>
 
         </div>
-        <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleControls " data-bs-slide="prev ">
+        <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon " aria-hidden="true "></span>
           <span class="visually-hidden ">Previous</span>
         </button>
@@ -77,12 +79,13 @@
           <span class="visually-hidden ">Next</span>
         </button>
     </div>
+
     <!--Fim Carrossel-->
 
     <!--Inicio divs conteúdo-->
 
     <div>
-        <div id="historia ">
+        <div id="super">
             <br><br><br><br>
             <h1> História do Super Choque
             </h1>
@@ -94,59 +97,60 @@
                 acaba se misturando com alguns produtos químicos misteriosos que causou a morte de várias pessoas que estavam presente na ilha. Mas aquelas que sobreviveram, adquiriram mutações que desfiguraram suas caras, mas por alguma sorte Virgil
                 não sofreu nenhuma e adquiriu poderes eletromagnéticos. Assim ao escolher usar esse dom para o combate ao crime, surge um dos heróis mais conhecidos de todos os tempos, <strong>o Super-Choque.</strong></p>
 
-            <div id="curiosidade "></div>
-            <br><br><br><br>
-            <h1>Curiosidades</h1>
+            <div>
+                <p id="curiosidades"></p>
+            </div>
+
             <br><br>
+
+            <h1>Curiosidades</h1>
+            <br>
 
 
             <!--Inicio BootSTrap Cards-->
 
-            <section style="align-items: center; ">
+            <div class="d-flex justify-content-center">
                 <div class="card-config ">
-                    <div style="align-items: center; " class="card ">
-                        <img class="card-img-top cards " src="ativos/imagens/liga.jpg " alt="Imagem de capa do card ">
-                        <div style="background-color:#140a5d ; " class="card-body ">
-                            <h5 class="center ">UNIVERSO DC</h5>
-                            <br>
-                            <p class="card-text ">Por mais que o herói tenha episódios inesquecíveis com a participação do Batman e da Liga da Justiça, Virgil veio de uma editora diferente como já dito, que acabou ganhando um universo a parte dentro da DC Comics, conhecido
-                                como Dakotaverso.
-                                <br><br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <div style="align-items: center; " class="card "></div>
+                    <img class="card-img-top cards " src="ativos/imagens/liga.jpg " alt="Imagem de capa do card ">
+                    <div style="background-color:#140a5d ; " class="card-body ">
+                        <h5 class="center ">UNIVERSO DC</h5>
 
-                <div class="card-config ">
-                    <div style="align-items: center; " class="card ">
-                        <img class="card-img-top cards " src="ativos/imagens/card2.jpg " alt="Imagem de capa do card ">
-                        <div style="background-color:#140a5d ; " class="card-body ">
-                            <h5 class="center ">LIGA DA JUSTIÇA DO FUTURO </h5>
-                            <br>
-                            <p class="card-text ">No 12° e 13° episódios do desenho da Liga da Justiça: Sem Limites, Batman, Mulher- Maravilha e Lanterna Verde estavam atrás de um criminoso até serem teleportados para Gotham... só que no futuro !!!<br><br><br><br><br>
-                            </p>
-                        </div>
+                        <p class="card-text">Por mais que o herói tenha episódios inesquecíveis com a participação do Batman e da Liga da Justiça, Virgil veio de uma editora diferente como já dito, que acabou ganhando um universo a parte dentro da DC Comics, conhecido como
+                            Dakotaverso.
+
+                        </p>
                     </div>
 
                 </div>
 
                 <div class="card-config ">
-                    <div class="card ">
-                        <img class="card-img-top cards " src="ativos/imagens/card3.jpg " alt="Imagem de capa do card ">
-                        <div style="background-color:#140a5d ; " class="card-body ">
-                            <h5 class="center ">PARTICIPAÇÕES ESPECIAIS </h5>
-                            <br>
-                            <p class="card-text ">No 12° e 13° episódio do desenho da Liga da Justiça: Sem Limites, Batman, Mulher- Maravilha e Lanterna Verde estavam atrás de um criminoso até serem teleportados para Gotham... só que no futuro !!!<br><br><br><br><br>
-                            </p>
-                        </div>
+                    <div style="align-items: center; " class="card"></div>
+                    <img class="card-img-top cards " src="ativos/imagens/card2.jpg " alt="Imagem de capa do card ">
+                    <div style="background-color:#140a5d ; " class="card-body ">
+                        <h5 class="center ">LIGA DA JUSTIÇA DO FUTURO </h5>
+                        <p class="card-text ">No 12° e 13° episódios do desenho da Liga da Justiça: Sem Limites, Batman, Mulher-Maravilha e Lanterna Verde estavam atrás de um criminoso até serem teleportados para Gotham... só que no futuro !!!
+                        </p>
                     </div>
-
                 </div>
 
-            </section>
+                <div class="card-config ">
+                    <div style="align-items: center; " class="card"></div>
+                    <img class="card-img-top cards " src="ativos/imagens/card3.jpg " alt="Imagem de capa do card ">
+                    <div style="background-color:#140a5d ; " class="card-body ">
+                        <h5 class="center ">SUA PRÓPRIA LIGA</h5>
+                        <p class="card-text "> O maior crossover do Super Choque foi quando ele e seu melhor amigo entraram para a Liga da Justiça. Acostumado a enfrentar vilões adolescentes e zangados que queriam de vez em quando somente tentar encontrar algum lugar que se
+                            encaixem, por um tempo isso mudou bastante.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+    </div>
 
-        <!--Fim BootSTrap Cards-->
+    <!--Fim BootSTrap Cards-->
 
 
     </div>
@@ -166,50 +170,49 @@
     </div>
     <!--Fim rodapé-->
     <br>
-    <!-- Inicio alert BootStramp-->
-    <div id="contatoModal">
-        <div class="modal fade" id="exampleModal" tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-            <div class="modal-dialog " role="document ">
-                <div class="modal-content ">
-                    <div class="modal-header ">
-                        <h5 class="modal-title " id="exampleModalLabel ">Fale conosco</h5>
-                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
-                <span aria-hidden="true ">&times;</span>
-              </button>
-                    </div>
-                    <div class="modal-body ">
-                        <form>
-                            <div class="form-group ">
-                                <label for="recipient-name " class="col-form-label ">Nome completo:</label>
-                                <input type="text " class="form-control " id="recipient-name ">
-                            </div>
-                            <div class="form-group ">
-                                <label for="recipient-name " class="col-form-label ">E-mail:</label>
-                                <input type="email " class="form-control " id="recipient-name ">
-                            </div>
-                            <div class="form-group ">
-                                <label for="message-text " class="col-form-label ">Mensagem:</label>
-                                <textarea class="form-control " id="message-text "></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer ">
-                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Fechar</button>
-                        <button type="button " class="btn btn-primary ">Enviar</button>
-                    </div>
+    <!-- Inicio Modal BootStramp-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fale conosco:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="">
+                            <label for="recipient-name" class="col-form-label">Nome Completo:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="">
+                            <label for=" recipient-name " class="col-form-label ">E-mail:</label>
+                            <input type="text " class="form-control " id="recipient-name ">
+                        </div>
+                        <div class=" ">
+                            <label for="message-text " class="col-form-label ">Mensagem:</label>
+                            <textarea class="form-control " id="message-text "></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Fechar</button>
+                    <button type="button " class="btn btn-primary ">Enviar</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Fim alert BootStramp-->
+    <!--Fim Modal BootStramp-->
 
-        <!--Link do JS BootStramp-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+    <!--Link do JS BootStramp-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
-        <!--Link do JS local-->
-        <script src="ativos/style.css "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+    <!--Link do JS local-->
+    <script src="ativos/style.css "></script>
     </div>
 </body>
 
