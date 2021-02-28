@@ -1,0 +1,15 @@
+.fs-54 {
+    font-size: 54pt;
+}
+
+.fs-18 {
+    font-size: 18pt;
+}
+
+.bg-color {
+    background: linear-gradient(90deg, rgb(68, 31, 99) 0%, rgb(94, 8, 96) 100%);
+}
+
+.table-hover:hover {
+    color: rgb(94, 8, 96);
+}

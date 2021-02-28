@@ -1,3 +1,7 @@
+.bg-color {
+    background: linear-gradient(90deg, rgb(173, 125, 212) 0%, rgb(160, 77, 161) 100%);
+}
+
 ul.social-network {
     list-style: none;
     padding: 0;

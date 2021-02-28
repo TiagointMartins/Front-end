@@ -1,0 +1,63 @@
+    .fs-54 {
+        font-size: 54pt;
+    }
+    
+    .fs-18 {
+        font-size: 18pt;
+    }
+    
+    .bg-color:hover {
+        background: linear-gradient(90deg, rgb(68, 31, 99) 0%, rgb(94, 8, 96) 100%);
+    }
+    
+    .bg-color {
+        background: linear-gradient(90deg, rgb(68, 31, 99) 0%, rgb(94, 8, 96) 100%);
+    }
+    
+    .btn {
+        border-radius: 20px;
+        align-items: center;
+    }
+    
+    .btn-custom {
+        background: linear-gradient(90deg, rgb(68, 31, 99) 0%, rgb(94, 8, 96) 100%);
+    }
+    
+    .espacamento {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .cor-texto {
+        text-decoration: white;
+    }
+    
+    a:hover {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .form-control {
+        background: black;
+    }
+    
+    .modal-content {
+        color: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgb(41, 58, 76, 1) 0%, rgb(94, 8, 96) 100%);
+    }
+    
+    .modal {
+        background-image: radial-gradient(circle 919px at 10.7% 15.1%, rgb(92, 130, 172) 26%, rgb(179, 208, 223) 100.2%);
+    }
+    
+    .tc {
+        padding-top: 1rem;
+        padding-bottom: 0.5em;
+        text-align: center;
+        padding-left: 2rem;
+        text-decoration: white;
+    }
+    
+    .modal-footer {
+        justify-content: flex-start;
+    }
