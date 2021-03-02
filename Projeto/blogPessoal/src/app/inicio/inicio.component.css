@@ -61,3 +61,8 @@
     .modal-footer {
         justify-content: flex-start;
     }
+    
+    .card {
+        background-color: black;
+        text-decoration: white;
+    }
