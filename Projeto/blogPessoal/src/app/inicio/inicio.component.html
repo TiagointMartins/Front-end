@@ -12,8 +12,12 @@
 
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
+
                     <button class="btn btn-light mr-2" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+
+
                     <a class="btn btn-outline-light" href="#postagens">Ver Postagens</a>
+
                 </div>
             </div>
 
@@ -35,9 +39,10 @@
         Postagens</a>
 
             <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-contact" aria-selected="false">Postagens por tema</a>
-
         </div>
+
     </nav>
+
 
     <div class="tab-content mt-5 text-white bg-color" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
@@ -64,13 +69,15 @@
         <div class="tab-pane fade text-white bg-color" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
             <div class="card-columns text-white">
-                <div class="card text-center" *ngFor='let item of user.Postagem'>
+                <div class="card text-center" *ngFor='let item of user.postagem'>
                     <div class="card-body text-white">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
                         <small class="text-muted mb-3"> Tema: {{item.tema.descricao}}</small>
                         <p class="card-text mt-3">{{item.texto}}</p>
                         <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} ás {{item.date | date: 'HH:mm'}}
-              </small></p>
+                                </small></p>
+                        <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3 " href=" ">Editar</a>
+                        <a [routerLink]="['/postagem-delete', item.id]" class="text-danger " href=" ">Apagar</a>
 
                     </div>
                 </div>
@@ -78,17 +85,17 @@
 
         </div>
 
-        <div class="tab-pane fade bg-color text-white" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+        <div class="tab-pane fade bg-color text-white " id="postagemTema " role="tabpanel " aria-labelledby="nav-postagemTema-tab ">
 
-            <div class="card-columns text-white" *ngFor='let tema of listaTemas'>
+            <div class="card-columns text-white " *ngFor='let tema of listaTemas'>
                 <div class="card text-center" *ngFor='let item of tema.postagem'>
-                    <div class="card-body text-white">
-                        <h5 class="card-title m-0">{{item.titulo}}</h5>
-                        <p class="card-text mt-3">{{item.texto}}</p>
-                        <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} ás {{item.date | date: 'HH:mm'}}
+                    <div class="card-body text-white ">
+                        <h5 class="card-title m-0 ">{{item.titulo}}</h5>
+                        <p class="card-text mt-3 ">{{item.texto}}</p>
+                        <p class="card-text "><small class="text-muted ">{{item.date | date: 'dd/MM/yyyy'}} ás {{item.date | date: 'HH:mm'}}
               </small></p>
 
-                        <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}
+                        <p class="card-text "><small class="text-muted ">by: {{item.usuario.nome}}
               </small></p>
                     </div>
                 </div>
@@ -102,42 +109,44 @@
 
 <!-- Modal -->
 
-<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+<div class="modal fade " id="novaPostagem" tabindex="-1 " role="dialog " aria-labelledby="TituloModalCentralizado " aria-hidden="true ">
+    <div class="modal-dialog modal-dialog-centered " role="document ">
+        <div class="modal-content ">
+
             <div class="modal-header">
-                <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
+                <h5 class="modal-title " id="TituloModalCentralizado ">Nova Postagem</h5>
+                <button type="button " class="close " data-dismiss="modal " aria-label="Fechar ">
+            <span aria-hidden="true ">&times;</span>
           </button>
             </div>
-            <div class="modal-body">
+
+            <div class="modal-body ">
 
                 <div class="form-group ">
-                    <label for="titulo">Título</label>
-                    <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                    <label for="titulo ">Título</label>
+                    <input [(ngModel)]='postagem.titulo' type="text " class="form-control " id="titulo " placeholder="Digite o título ">
                 </div>
 
-                <div class="form-group">
-                    <label for="texto">Texto</label>
-                    <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="2"></textarea>
+                <div class="form-group ">
+                    <label for="texto ">Texto</label>
+                    <textarea [(ngModel)]='postagem.texto' class="form-control " name="texto " id="texto " rows="2 "></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>: </label>
-                    <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
-                    <option *ngFor='let item of listaTemas' value="{{item.id}}">
+                <div class="form-group ">
+                    <label for="tema ">Escolha um tema ou <a data-dismiss="modal " routerLink='/tema'>cadastre um novo</a>: </label>
+                    <select name="tema " id="tema " class="form-control " [(ngModel)]='idTema' (change)='findByIdTema()'>
+                    <option *ngFor='let item of listaTemas' value="{{item.id}} ">
                       {{item.descricao}}</option>
                 </select>
 
                 </div>
 
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer ">
 
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button type="button " class="btn btn-danger " data-dismiss="modal ">Cancelar</button>
 
-                <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
+                <button type="button " class="btn btn-success " (click)='publicar()' data-dismiss="modal ">Publicar</button>
 
             </div>
         </div>

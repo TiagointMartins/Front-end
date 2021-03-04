@@ -5,3 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cor-de-fundo {
+    background: linear-gradient(90deg, rgb(41, 58, 76, 1) 0%, rgb(94, 8, 96) 100%);
+}
