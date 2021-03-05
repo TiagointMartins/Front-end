@@ -13,67 +13,63 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class PostagemEditComponent implements OnInit {
 
-postagem: Postagem = new Postagem()
+  postagem: Postagem = new Postagem()
 
-tema: Tema = new Tema()
+  tema: Tema = new Tema()
+  listaTemas: Tema[]
+  idTema: number
 
-listaTemas: Tema[]
 
-idTema: number
+   
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private postagagemService: PostagemService,
+    private postagemService: PostagemService,
     private temaService: TemaService
-
-
+    
   ) { }
 
   ngOnInit() {
-    
+
     window.scroll(0,0)
     
-    if(environment.token == ''){
+    if(environment.token == '') {
       this.router.navigate(['/entrar'])
     }
 
     let id = this.route.snapshot.params['id']
     this.findByIdPostagem(id)
-    this.findAllTemas
+    this.findAllTemas()
   }
 
-  findByIdPostagem(id: number){
-  this.postagagemService.getByIdPostagem(id).subscribe((resp: Postagem) =>{
+  findByIdPostagem(id: number) {
+    this.postagemService.getByIdPostagem(id).subscribe((resp: Postagem) => {
       this.postagem = resp
     })
   }
 
-  findByIdTema(){
-    this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) =>{
+  findByIdTema() {
+    this.temaService.getByIdTema(this.idTema).subscribe((resp: Tema) => {
       this.tema = resp
     })
   }
 
-  findAllTemas(){
-    this.temaService.getAllTema().subscribe((resp: Tema[])=>{
+  findAllTemas() {
+    this.temaService.getAllTema().subscribe((resp: Tema[]) =>{
       this.listaTemas = resp
     })
   }
- 
-  atualizar(){
+
+  atualizar() {
     this.tema.id = this.idTema
     this.postagem.tema = this.tema
 
-    this.postagagemService.putPostagem(this.postagem).subscribe((resp: Postagem)=> {
+    this.postagemService.putPostagem(this.postagem).subscribe((resp: Postagem) =>{
       this.postagem = resp
-
-      alert('Postagem atualizada com sucesso')
+      alert('Postagem atualizada com sucesso!')
       this.router.navigate(['/inicio'])
     })
   }
-
-
-
 
 }

@@ -16,11 +16,9 @@ import { TemaService } from '../service/tema.service';
 export class InicioComponent implements OnInit {
 
   tema: Tema = new Tema()
-  
   listaTemas: Tema[]
 
   postagem: Postagem = new Postagem()
-
   listaPostagens: Postagem[]
   
   idTema: number
@@ -37,7 +35,8 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    window.scroll(0,0)
+    
     if(environment.token == '') {
       this.router.navigate(['/entrar'])
     }
