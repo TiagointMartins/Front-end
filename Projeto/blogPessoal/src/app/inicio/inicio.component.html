@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-6 d-flex justify-content-center">
-            <img src="../../assets/imagens/img-inicio.png" alt="" width="500px" height="500px">
+            <img src="../../assets/imagens/Connected.gif" alt="" width="500px" height="500px">
         </div>
     </div>
 </div>
@@ -33,17 +33,24 @@
 
             <a (click)='findByIdUser()' class="nav-item nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
         Postagens</a>
-
             <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-contact" aria-selected="false">Postagens por tema</a>
-
         </div>
     </nav>
 
     <div class="tab-content mt-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
 
+
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-goup">
+                        <input type="text" class="form-control" id="titulo" placeholder="Digite um titulo de postagem para realizar a pesquisa" [(ngModel)]='tituloPost' (keyup)='findByTituloPostagem'>
+                    </div>
+                </div>
+            </div>
+
             <div class="card-columns">
-                <div class="card text-center" *ngFor='let item of listaPostagens'>
+                <div class="card text-center" *ngFor='let item of listaPostagens | orderBy : key : reverse'>
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
                         <small class="text-muted mb-3"> Tema: {{item.tema.descricao}}</small>
@@ -64,7 +71,7 @@
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 
             <div class="card-columns">
-                <div class="card text-center" *ngFor='let item of user.postagem'>
+                <div class="card text-center" *ngFor='let item of user.postagem | orderBy : key : reverse'>
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
                         <small class="text-muted mb-3"> Tema: {{item.tema.descricao}}</small>
@@ -82,7 +89,15 @@
 
         <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
-            <div class="card-columns" *ngFor='let tema of listaTemas'>
+            <div class="row d-flex justify-content-center mt-5 mb-5">
+                <div class="col-md-4">
+                    <div class="form-goup">
+                        <input type="text" class="form-control" id="titulo" placeholder="Digite um tema para pesquisa" [(ngModel)]='nomeTema' (keyup)='findByNomeTema'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-columns text-white" *ngFor='let tema of listaTemas | orderBy : key : reverse'>
                 <div class="card text-center" *ngFor='let item of tema.postagem'>
                     <div class="card-body">
                         <h5 class="card-title m-0">{{item.titulo}}</h5>
